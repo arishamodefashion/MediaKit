@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArishaModeFashion — Model Media Kit 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Tenor+Sans&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --cream: #F5F0E8;
+  --black: #0C0C0C;
+  --rose: #C4956A;
+  --rose-light: #E8C4A0;
+  --nude: #E8DDD0;
+  --dark: #1A1410;
+  --grey: #9A9490;
+  --white: #FEFCF9;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--cream); color: var(--black); font-family: 'Didact Gothic', sans-serif; overflow-x: hidden; cursor: crosshair; }
+
+/* ── SAVE BTN ── */
+.save-btn {
+  position: fixed; bottom: 28px; right: 28px; z-index: 999;
+  background: var(--black); color: var(--cream);
+  border: none; padding: 14px 28px;
+  font-family: 'Didact Gothic', sans-serif; font-size: 10px;
+  letter-spacing: 3px; text-transform: uppercase; cursor: pointer;
+  transition: all 0.3s; box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+.save-btn:hover { background: var(--rose); transform: translateY(-3px); }
+
+/* ══════════════════════════
+   COVER
+══════════════════════════ */
+.cover {
+  min-height: 100vh; background: var(--black);
+  display: grid; grid-template-columns: 1fr 1fr;
+  position: relative; overflow: hidden;
+}
+.cover-left {
+  display: flex; flex-direction: column;
+  justify-content: space-between; padding: 60px 50px;
+  position: relative; z-index: 2;
+}
+.cover-right {
+  background: var(--dark); position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+/* Silhouette runway art */
+.runway-art {
+  position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 100%; height: 100%;
+  display: flex; align-items: flex-end; justify-content: center; gap: 0;
+}
+.model-silhouette {
+  width: 60px; background: var(--black);
+  position: relative; transition: height 0.5s;
+}
+.model-silhouette:nth-child(1) { height: 55%; clip-path: polygon(30% 0%, 70% 0%, 85% 8%, 90% 20%, 80% 35%, 75% 50%, 80% 65%, 85% 80%, 80% 95%, 20% 95%, 15% 80%, 20% 65%, 25% 50%, 20% 35%, 10% 20%, 15% 8%); opacity:0.3; }
+.model-silhouette:nth-child(2) { height: 75%; clip-path: polygon(25% 0%, 75% 0%, 88% 10%, 92% 25%, 82% 40%, 78% 55%, 83% 70%, 88% 85%, 82% 100%, 18% 100%, 12% 85%, 18% 70%, 22% 55%, 18% 40%, 8% 25%, 12% 10%); opacity:0.6; background: var(--rose); }
+.model-silhouette:nth-child(3) { height: 90%; clip-path: polygon(28% 0%, 72% 0%, 86% 9%, 91% 22%, 81% 37%, 76% 52%, 81% 67%, 86% 82%, 80% 100%, 20% 100%, 14% 82%, 20% 67%, 24% 52%, 19% 37%, 9% 22%, 14% 9%); opacity:1; background: var(--cream); }
+.model-silhouette:nth-child(4) { height: 70%; clip-path: polygon(25% 0%, 75% 0%, 88% 10%, 92% 25%, 82% 40%, 78% 55%, 83% 70%, 88% 85%, 82% 100%, 18% 100%, 12% 85%, 18% 70%, 22% 55%, 18% 40%, 8% 25%, 12% 10%); opacity:0.5; }
+.model-silhouette:nth-child(5) { height: 50%; clip-path: polygon(30% 0%, 70% 0%, 85% 8%, 90% 20%, 80% 35%, 75% 50%, 80% 65%, 85% 80%, 80% 95%, 20% 95%, 15% 80%, 20% 65%, 25% 50%, 20% 35%, 10% 20%, 15% 8%); opacity:0.2; }
+
+.runway-line {
+  position: absolute; bottom: 0; left: 10%; right: 10%;
+  height: 1px; background: linear-gradient(90deg, transparent, var(--rose), transparent);
+}
+.runway-dots {
+  position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 40px;
+}
+.runway-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--rose); opacity: 0.5; }
+
+.cover-logo {
+  font-family: 'EB Garamond', serif;
+  font-size: 13px; letter-spacing: 6px; color: var(--rose);
+  text-transform: uppercase; font-weight: 400;
+}
+.cover-main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.cover-issue {
+  font-family: 'EB Garamond', serif; font-style: italic;
+  font-size: 13px; color: var(--grey); letter-spacing: 3px; margin-bottom: 20px;
+}
+.cover-headline {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(52px, 5.5vw, 88px);
+  font-weight: 700; line-height: 0.92;
+  color: var(--cream); letter-spacing: -2px;
+}
+.cover-headline .italic { font-style: italic; color: var(--rose); }
+.cover-headline .light { font-weight: 400; color: rgba(245,240,232,0.5); font-size: 0.65em; }
+.cover-desc {
+  margin-top: 30px; font-size: 11px; line-height: 2;
+  color: var(--grey); letter-spacing: 1px; max-width: 320px;
+  border-left: 1px solid var(--rose); padding-left: 20px;
+}
+.cover-stats {
+  display: flex; gap: 40px; padding-top: 40px;
+  border-top: 1px solid rgba(245,240,232,0.1);
+}
+.c-stat-num {
+  font-family: 'EB Garamond', serif; font-size: 32px;
+  font-weight: 700; color: var(--rose); line-height: 1;
+}
+.c-stat-lbl { font-size: 8px; letter-spacing: 3px; color: var(--grey); text-transform: uppercase; margin-top: 4px; }
+
+.cover-right-label {
+  position: absolute; top: 40px; right: -30px; transform: rotate(90deg);
+  font-size: 9px; letter-spacing: 5px; color: var(--rose);
+  text-transform: uppercase; white-space: nowrap; z-index: 3;
+}
+.cover-right-year {
+  position: absolute; bottom: 40px; left: 30px;
+  font-family: 'EB Garamond', serif; font-size: 60px;
+  font-weight: 700; color: rgba(255,255,255,0.04); line-height: 1;
+}
+
+/* ══════════════════════════
+   TAGLINE STRIP
+══════════════════════════ */
+.strip {
+  background: var(--rose); padding: 18px 60px;
+  display: flex; align-items: center; gap: 60px; overflow: hidden;
+}
+.strip-text {
+  font-family: 'Tenor Sans', sans-serif; font-size: 11px;
+  letter-spacing: 4px; color: var(--cream); text-transform: uppercase;
+  white-space: nowrap;
+}
+.strip-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--cream); opacity: 0.5; flex-shrink: 0; }
+
+/* ══════════════════════════
+   EDITORIAL INTRO
+══════════════════════════ */
+.editorial {
+  background: var(--white); padding: 100px 80px;
+  display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start;
+}
+.ed-label {
+  font-size: 9px; letter-spacing: 5px; color: var(--rose);
+  text-transform: uppercase; writing-mode: vertical-rl;
+  transform: rotate(180deg); align-self: center;
+}
+.ed-content {}
+.ed-issue { font-size: 10px; letter-spacing: 4px; color: var(--grey); text-transform: uppercase; margin-bottom: 25px; }
+.ed-title {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(38px, 4vw, 62px); font-weight: 700;
+  line-height: 1.05; color: var(--black); margin-bottom: 35px;
+}
+.ed-title em { font-style: italic; color: var(--rose); }
+.ed-body {
+  font-family: 'EB Garamond', serif; font-size: 19px;
+  font-weight: 400; line-height: 1.85; color: #3a3530;
+  max-width: 650px; columns: 2; column-gap: 40px;
+}
+.ed-quote {
+  margin-top: 50px; padding: 30px 40px;
+  border-top: 2px solid var(--black); border-bottom: 1px solid var(--nude);
+  font-family: 'EB Garamond', serif; font-size: 22px;
+  font-style: italic; color: var(--black); line-height: 1.6;
+}
+.ed-quote span { color: var(--rose); }
+
+/* ══════════════════════════
+   MODEL SHOWCASE
+══════════════════════════ */
+.model-section { background: var(--black); padding: 90px 70px; }
+.model-section .section-label { font-size: 9px; letter-spacing: 5px; color: var(--rose); text-transform: uppercase; margin-bottom: 15px; }
+.model-section .section-title {
+  font-family: 'EB Garamond', serif; font-size: clamp(36px, 4vw, 58px);
+  font-weight: 700; color: var(--cream); line-height: 1.05; margin-bottom: 60px;
+}
+.model-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.model-card {
+  background: var(--dark); aspect-ratio: 3/4;
+  position: relative; overflow: hidden; cursor: pointer;
+  transition: transform 0.4s;
+}
+.model-card:hover { transform: scale(1.02); z-index: 2; }
+.model-card:hover .model-overlay { opacity: 1; }
+/* Artistic gradient placeholders since we can't use real photos */
+.model-card:nth-child(1) { background: linear-gradient(160deg, #1a1208 0%, #3d2b14 40%, #1a1208 100%); }
+.model-card:nth-child(2) { background: linear-gradient(160deg, #0c0c0c 0%, #2a1a0e 40%, #0c0c0c 100%); background-color: var(--black); }
+.model-card:nth-child(3) { background: linear-gradient(160deg, #1f1510 0%, #4a3020 40%, #1f1510 100%); }
+.model-figure {
+  position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 55%; height: 85%;
+  background: rgba(245,240,232,0.06);
+  clip-path: polygon(25% 0%, 75% 0%, 90% 8%, 95% 20%, 85% 38%, 80% 55%, 86% 72%, 90% 88%, 84% 100%, 16% 100%, 10% 88%, 14% 72%, 20% 55%, 15% 38%, 5% 20%, 10% 8%);
+}
+.model-card:nth-child(1) .model-figure { background: rgba(196,149,106,0.25); }
+.model-card:nth-child(2) .model-figure { background: rgba(245,240,232,0.15); }
+.model-card:nth-child(3) .model-figure { background: rgba(196,149,106,0.18); }
+.model-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(196,149,106,0.85) 0%, transparent 60%);
+  opacity: 0; transition: opacity 0.4s;
+  display: flex; align-items: flex-end; padding: 25px;
+}
+.model-tag {
+  font-size: 10px; letter-spacing: 3px; color: var(--cream); text-transform: uppercase;
+}
+.model-label {
+  position: absolute; top: 20px; left: 20px;
+  font-size: 9px; letter-spacing: 3px; color: rgba(245,240,232,0.3);
+  text-transform: uppercase;
+}
+
+/* ══════════════════════════
+   STATS FULL
+══════════════════════════ */
+.stats-full { background: var(--cream); padding: 90px 70px; position: relative; overflow: hidden; }
+.stats-full::after {
+  content: '7K'; position: absolute; right: 40px; top: 30px;
+  font-family: 'EB Garamond', serif; font-size: 220px; font-weight: 700;
+  color: rgba(0,0,0,0.04); line-height: 1; pointer-events: none; letter-spacing: -10px;
+}
+.section-label { font-size: 9px; letter-spacing: 5px; color: var(--rose); text-transform: uppercase; margin-bottom: 15px; }
+.section-title { font-family: 'EB Garamond', serif; font-size: clamp(36px, 4vw, 58px); font-weight: 700; line-height: 1.05; margin-bottom: 60px; }
+.stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; }
+.stat-box {
+  background: var(--black); padding: 45px 30px; text-align: center;
+  position: relative; overflow: hidden; transition: all 0.3s;
+}
+.stat-box:hover { background: var(--dark); }
+.stat-box::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 2px; background: linear-gradient(90deg, var(--rose), var(--rose-light));
+}
+.stat-num {
+  font-family: 'EB Garamond', serif; font-size: clamp(40px, 4vw, 58px);
+  font-weight: 700; color: var(--rose); line-height: 1;
+}
+.stat-unit { font-size: 18px; color: var(--rose-light); }
+.stat-label { font-size: 9px; letter-spacing: 3px; color: var(--grey); text-transform: uppercase; margin-top: 10px; }
+
+/* ══════════════════════════
+   AUDIENCE
+══════════════════════════ */
+.audience { background: var(--nude); padding: 90px 70px; }
+.aud-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; align-items: center; }
+.aud-bars {}
+.aud-item { margin-bottom: 35px; }
+.aud-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+.aud-name { font-family: 'Tenor Sans', sans-serif; font-size: 12px; letter-spacing: 2px; color: var(--black); text-transform: uppercase; }
+.aud-pct { font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 700; color: var(--rose); }
+.aud-track { height: 2px; background: rgba(0,0,0,0.1); }
+.aud-fill { height: 100%; background: var(--rose); transition: width 1.5s ease; }
+.aud-circles { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.aud-circle-card {
+  background: var(--black); padding: 35px 25px; text-align: center;
+  position: relative;
+}
+.aud-c-num { font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 700; color: var(--rose-light); }
+.aud-c-label { font-size: 9px; letter-spacing: 2px; color: var(--grey); text-transform: uppercase; margin-top: 8px; }
+
+/* ══════════════════════════
+   CONTENT TYPES
+══════════════════════════ */
+.content-section { background: var(--white); padding: 90px 70px; }
+.content-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2px; margin-top: 60px; }
+.content-card { background: var(--cream); padding: 40px 30px; border-top: 2px solid transparent; transition: all 0.3s; cursor: default; }
+.content-card:hover { border-top-color: var(--rose); background: var(--white); }
+.content-icon { font-size: 32px; margin-bottom: 20px; }
+.content-name { font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+.content-desc { font-size: 12px; line-height: 1.8; color: var(--grey); }
+
+/* ══════════════════════════
+   PACKAGES
+══════════════════════════ */
+.packages { background: var(--black); padding: 90px 70px; }
+.packages .section-title { color: var(--cream); }
+.packages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2px; margin-top: 60px; }
+.pkg-card {
+  background: var(--dark); padding: 45px 30px;
+  border-bottom: 2px solid transparent; transition: all 0.3s; position: relative;
+}
+.pkg-card:hover { border-bottom-color: var(--rose); background: #1f1a14; }
+.pkg-card.featured { background: var(--rose); }
+.pkg-card.featured .pkg-name { color: var(--cream); }
+.pkg-card.featured .pkg-desc { color: rgba(245,240,232,0.75); }
+.pkg-card.featured .pkg-price { color: var(--black); }
+.pkg-card.featured .pkg-tag { background: var(--black); color: var(--rose); }
+.pkg-tag {
+  display: inline-block; padding: 4px 12px; margin-bottom: 20px;
+  background: rgba(196,149,106,0.15); border: 1px solid rgba(196,149,106,0.3);
+  font-size: 8px; letter-spacing: 3px; color: var(--rose); text-transform: uppercase;
+}
+.pkg-name { font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 700; color: var(--cream); margin-bottom: 15px; }
+.pkg-desc { font-size: 12px; line-height: 1.8; color: var(--grey); margin-bottom: 25px; }
+.pkg-divider { height: 1px; background: rgba(245,240,232,0.1); margin-bottom: 20px; }
+.pkg-price { font-family: 'EB Garamond', serif; font-size: 26px; font-weight: 700; color: var(--rose-light); }
+.pkg-includes { margin-top: 20px; }
+.pkg-includes li { font-size: 11px; color: var(--grey); list-style: none; padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.pkg-includes li::before { content: '— '; color: var(--rose); }
+
+/* ══════════════════════════
+   WHY US
+══════════════════════════ */
+.why { background: var(--cream); padding: 90px 70px; }
+.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 40px; margin-top: 60px; }
+.why-item { border-top: 1px solid var(--black); padding-top: 25px; }
+.why-num { font-family: 'EB Garamond', serif; font-size: 48px; font-weight: 700; color: rgba(196,149,106,0.25); line-height: 1; margin-bottom: -5px; }
+.why-name { font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+.why-text { font-size: 12px; line-height: 1.9; color: var(--grey); }
+
+/* ══════════════════════════
+   CONTACT
+══════════════════════════ */
+.contact { background: var(--dark); padding: 100px 70px; position: relative; overflow: hidden; }
+.contact::before {
+  content: '';
+  position: absolute; top: -100px; right: -100px;
+  width: 400px; height: 400px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(196,149,106,0.08) 0%, transparent 70%);
+}
+.contact-inner { max-width: 700px; }
+.contact-overline { font-size: 9px; letter-spacing: 5px; color: var(--rose); text-transform: uppercase; margin-bottom: 25px; }
+.contact-title {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(44px, 6vw, 86px); font-weight: 700;
+  color: var(--cream); line-height: 0.95; letter-spacing: -2px; margin-bottom: 50px;
+}
+.contact-title em { font-style: italic; color: var(--rose); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+.contact-box { background: rgba(245,240,232,0.04); padding: 30px; border-left: 2px solid rgba(196,149,106,0.2); }
+.contact-box:hover { border-left-color: var(--rose); background: rgba(245,240,232,0.06); }
+.contact-label { font-size: 9px; letter-spacing: 4px; color: var(--rose); text-transform: uppercase; margin-bottom: 10px; }
+.contact-val { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--cream); }
+.contact-cta {
+  display: inline-block; margin-top: 50px; padding: 18px 55px;
+  background: var(--rose); color: var(--cream);
+  font-family: 'Didact Gothic', sans-serif; font-size: 10px;
+  letter-spacing: 4px; text-transform: uppercase; cursor: pointer;
+  border: none; transition: all 0.3s;
+}
+.contact-cta:hover { background: var(--rose-light); color: var(--black); transform: translateY(-2px); }
+
+/* FOOTER */
+.footer {
+  background: var(--black); padding: 25px 70px;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;
+  border-top: 1px solid rgba(196,149,106,0.15);
+}
+.footer-brand { font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 700; color: var(--rose); }
+.footer-copy { font-size: 9px; letter-spacing: 2px; color: var(--grey); text-transform: uppercase; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cover { grid-template-columns: 1fr; }
+  .cover-right { display: none; }
+  .editorial { grid-template-columns: 1fr; padding: 60px 30px; }
+  .ed-label { writing-mode: horizontal-tb; transform: none; }
+  .ed-body { columns: 1; }
+  .model-grid { grid-template-columns: 1fr; }
+  .aud-layout { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .stats-full, .packages, .why, .audience, .content-section, .model-section, .contact { padding: 60px 30px; }
+  .footer { padding: 20px 30px; }
+}
+@media print {
+  .save-btn { display: none; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ COVER ══ -->
+<section class="cover">
+  <div class="cover-left">
+    <div class="cover-logo">ArishaModeFashion ✦ Media Kit</div>
+    <div class="cover-main">
+      <div class="cover-issue">Vol. I · India · 2025</div>
+      <div class="cover-headline">
+        <div>Where</div>
+        <div class="italic">Models</div>
+        <div>Meet<br><span class="light">the Lens</span></div>
+      </div>
+      <p class="cover-desc">
+        India's premium model-first YouTube channel — every video, every frame crafted around the art of fashion modelling.
+      </p>
+    </div>
+    <div class="cover-stats">
+      <div>
+        <div class="c-stat-num">7K+</div>
+        <div class="c-stat-lbl">Subscribers</div>
+      </div>
+      <div>
+        <div class="c-stat-num">↑</div>
+        <div class="c-stat-lbl">Growing Fast</div>
+      </div>
+      <div>
+        <div class="c-stat-num">100%</div>
+        <div class="c-stat-lbl">Model Content</div>
+      </div>
+    </div>
+  </div>
+  <div class="cover-right">
+    <div class="cover-right-label">ArishaModeFashion · Model Editorial</div>
+    <div class="cover-right-year">2025</div>
+    <div class="runway-art">
+      <div class="model-silhouette"><div class="model-figure"></div></div>
+      <div class="model-silhouette"><div class="model-figure"></div></div>
+      <div class="model-silhouette"><div class="model-figure"></div></div>
+      <div class="model-silhouette"><div class="model-figure"></div></div>
+      <div class="model-silhouette"><div class="model-figure"></div></div>
+    </div>
+    <div class="runway-line"></div>
+    <div class="runway-dots">
+      <div class="runway-dot"></div>
+      <div class="runway-dot"></div>
+      <div class="runway-dot"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STRIP ══ -->
+<div class="strip">
+  <span class="strip-text">Model-First Content</span>
+  <div class="strip-dot"></div>
+  <span class="strip-text">Editorial Videos</span>
+  <div class="strip-dot"></div>
+  <span class="strip-text">Fashion & Style</span>
+  <div class="strip-dot"></div>
+  <span class="strip-text">7,000+ Subscribers</span>
+  <div class="strip-dot"></div>
+  <span class="strip-text">Brand Collaborations</span>
+  <div class="strip-dot"></div>
+  <span class="strip-text">India's Rising Fashion Voice</span>
+</div>
+
+<!-- ══ EDITORIAL INTRO ══ -->
+<section class="editorial">
+  <div class="ed-label">About · Channel</div>
+  <div class="ed-content">
+    <div class="ed-issue">ArishaModeFashion · The Channel</div>
+    <div class="ed-title">Every Video,<br>Every Frame —<br><em>A Model Stars</em></div>
+    <div class="ed-body">
+      ArishaModeFashion is India's dedicated model-feature YouTube channel. Every single video we publish puts a model at the center — fashion walks, editorial shoots, brand showcases, outfit reveals, and style lookbooks. We believe fashion comes alive through people, not just clothes. Our 7,000+ subscribers tune in specifically to see models, making our audience highly targeted and purchase-ready for fashion brands. Based in India, our content bridges local fashion culture with global aesthetics — giving international brands direct access to India's young, style-conscious audience.
+    </div>
+    <div class="ed-quote">
+      "Every outfit tells a story — <span>we find the model who tells it best."</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MODEL SHOWCASE ══ -->
+<section class="model-section">
+  <div class="section-label">✦ Content Style</div>
+  <div class="section-title">Our Model-First<br>Video Format</div>
+  <div class="model-grid">
+    <div class="model-card">
+      <div class="model-label">01 · Editorial</div>
+      <div class="model-figure"></div>
+      <div class="model-overlay"><div class="model-tag">Fashion Editorial Shoots</div></div>
+    </div>
+    <div class="model-card">
+      <div class="model-label">02 · Runway</div>
+      <div class="model-figure"></div>
+      <div class="model-overlay"><div class="model-tag">Outfit & Lookbook Videos</div></div>
+    </div>
+    <div class="model-card">
+      <div class="model-label">03 · Brand</div>
+      <div class="model-figure"></div>
+      <div class="model-overlay"><div class="model-tag">Brand Feature Videos</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ══ -->
+<section class="stats-full">
+  <div class="section-label">✦ Channel Numbers</div>
+  <div class="section-title">Reach That<br>Matters</div>
+  <div class="stats-row">
+    <div class="stat-box">
+      <div class="stat-num">7<span class="stat-unit">K+</span></div>
+      <div class="stat-label">YouTube Subscribers</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">100<span class="stat-unit">%</span></div>
+      <div class="stat-label">Model-Featured Videos</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">8<span class="stat-unit">%+</span></div>
+      <div class="stat-label">Engagement Rate</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">↑</div>
+      <div class="stat-label">Monthly Growth</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ AUDIENCE ══ -->
+<section class="audience">
+  <div class="section-label">✦ Audience</div>
+  <div class="section-title">Who Watches<br>Our Models</div>
+  <div class="aud-layout">
+    <div class="aud-bars">
+      <div class="aud-item">
+        <div class="aud-top">
+          <span class="aud-name">Female Viewers</span>
+          <span class="aud-pct">68%</span>
+        </div>
+        <div class="aud-track"><div class="aud-fill" style="width:68%"></div></div>
+      </div>
+      <div class="aud-item">
+        <div class="aud-top">
+          <span class="aud-name">Age 18–34</span>
+          <span class="aud-pct">74%</span>
+        </div>
+        <div class="aud-track"><div class="aud-fill" style="width:74%"></div></div>
+      </div>
+      <div class="aud-item">
+        <div class="aud-top">
+          <span class="aud-name">India Based</span>
+          <span class="aud-pct">82%</span>
+        </div>
+        <div class="aud-track"><div class="aud-fill" style="width:82%"></div></div>
+      </div>
+      <div class="aud-item">
+        <div class="aud-top">
+          <span class="aud-name">Fashion Interested</span>
+          <span class="aud-pct">95%</span>
+        </div>
+        <div class="aud-track"><div class="aud-fill" style="width:95%"></div></div>
+      </div>
+    </div>
+    <div class="aud-circles">
+      <div class="aud-circle-card">
+        <div class="aud-c-num">📱</div>
+        <div class="aud-c-label">90% Mobile Viewers</div>
+      </div>
+      <div class="aud-circle-card">
+        <div class="aud-c-num">🌍</div>
+        <div class="aud-c-label">Global Reach</div>
+      </div>
+      <div class="aud-circle-card">
+        <div class="aud-c-num">🛍️</div>
+        <div class="aud-c-label">Purchase Intent High</div>
+      </div>
+      <div class="aud-circle-card">
+        <div class="aud-c-num">💬</div>
+        <div class="aud-c-label">High Comment Rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTENT TYPES ══ -->
+<section class="content-section">
+  <div class="section-label">✦ What We Create</div>
+  <div class="section-title">Our Model<br>Content Types</div>
+  <div class="content-grid">
+    <div class="content-card">
+      <div class="content-icon">👗</div>
+      <div class="content-name">Fashion Lookbooks</div>
+      <div class="content-desc">Models showcasing complete outfit collections — ideal for clothing brands wanting style inspiration content</div>
+    </div>
+    <div class="content-card">
+      <div class="content-icon">📸</div>
+      <div class="content-name">Editorial Shoots</div>
+      <div class="content-desc">High-aesthetic model video shoots — cinematic, magazine-quality fashion storytelling</div>
+    </div>
+    <div class="content-card">
+      <div class="content-icon">✨</div>
+      <div class="content-name">Brand Showcases</div>
+      <div class="content-desc">Models wearing and featuring your brand's collection in a premium, editorial environment</div>
+    </div>
+    <div class="content-card">
+      <div class="content-icon">🎬</div>
+      <div class="content-name">Runway Style Videos</div>
+      <div class="content-desc">Walk videos, poses, and fashion movement — bringing runway energy to YouTube</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PACKAGES ══ -->
+<section class="packages">
+  <div class="section-label">✦ Collaboration</div>
+  <div class="section-title">Brand Packages</div>
+  <div class="packages-grid">
+    <div class="pkg-card">
+      <div class="pkg-tag">Starter</div>
+      <div class="pkg-name">Model Mention</div>
+      <div class="pkg-desc">Model wears your product in video. Brand tag + link in description.</div>
+      <div class="pkg-divider"></div>
+      <div class="pkg-price">$50 – $100</div>
+      <ul class="pkg-includes">
+        <li>Model wears product on screen</li>
+        <li>Description link included</li>
+        <li>Instagram story mention</li>
+      </ul>
+    </div>
+    <div class="pkg-card featured">
+      <div class="pkg-tag">Most Popular</div>
+      <div class="pkg-name">Full Feature Video</div>
+      <div class="pkg-desc">Complete video built around your brand — model-forward, editorial style.</div>
+      <div class="pkg-divider"></div>
+      <div class="pkg-price">$150 – $350</div>
+      <ul class="pkg-includes">
+        <li>Dedicated full YouTube video</li>
+        <li>Model wearing your collection</li>
+        <li>Script highlights your brand</li>
+        <li>All social media sharing</li>
+      </ul>
+    </div>
+    <div class="pkg-card">
+      <div class="pkg-tag">Reels</div>
+      <div class="pkg-name">Instagram Reel</div>
+      <div class="pkg-desc">Short model video reel featuring your product — optimized for virality.</div>
+      <div class="pkg-divider"></div>
+      <div class="pkg-price">$60 – $130</div>
+      <ul class="pkg-includes">
+        <li>30–60 sec vertical reel</li>
+        <li>Model-led showcase</li>
+        <li>Trending audio/format</li>
+      </ul>
+    </div>
+    <div class="pkg-card">
+      <div class="pkg-tag">Premium</div>
+      <div class="pkg-name">Full Bundle</div>
+      <div class="pkg-desc">Complete multi-platform package — YouTube + Instagram + Story coverage.</div>
+      <div class="pkg-divider"></div>
+      <div class="pkg-price">$250 – $550</div>
+      <ul class="pkg-includes">
+        <li>YouTube dedicated video</li>
+        <li>Instagram Reel</li>
+        <li>2× Instagram Stories</li>
+        <li>Long-term partnership rate</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY US ══ -->
+<section class="why">
+  <div class="section-label">✦ Our Edge</div>
+  <div class="section-title">Why Brands Choose<br>ArishaModeFashion</div>
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="why-num">01</div>
+      <div class="why-name">100% Model Content</div>
+      <div class="why-text">Every single video features a model — your brand is always shown on a real person, in motion, in style. Not just product photos.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-num">02</div>
+      <div class="why-name">Fashion-Ready Audience</div>
+      <div class="why-text">Our subscribers watch specifically for fashion and models — they are already in the mindset to discover and buy fashion brands.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-num">03</div>
+      <div class="why-name">India's Market Access</div>
+      <div class="why-text">82% Indian audience — international brands get direct, trusted access to India's massive, growing fashion consumer market.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-num">04</div>
+      <div class="why-name">Fast Growing Channel</div>
+      <div class="why-text">Early partnerships = best rates and highest returns. Partnering now means growing with us as the channel scales to 50K and beyond.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section class="contact">
+  <div class="contact-inner">
+    <div class="contact-overline">✦ Let's Create Together</div>
+    <div class="contact-title">Book a<br><em>Collaboration</em></div>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <div class="contact-label">Email</div>
+        <div class="contact-val">arishamodefashion@gmail.com</div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-label">YouTube Channel</div>
+        <div class="contact-val">ArishaModeFashion</div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-label">Location</div>
+        <div class="contact-val">India</div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-label">Content Niche</div>
+        <div class="contact-val">Models · Fashion · Editorial</div>
+      </div>
+    </div>
+    <button class="contact-cta" onclick="window.print()">⬇ Download Media Kit as PDF</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">ArishaModeFashion</div>
+  <div class="footer-copy">© 2025 · arishamodefashion@gmail.com · India · All Rights Reserved</div>
+</footer>
+
+<button class="save-btn" onclick="window.print()">⬇ Save as PDF</button>
+
+</body>
+</html>
